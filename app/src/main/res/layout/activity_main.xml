@@ -12,9 +12,40 @@
         android:layout_height="match_parent"
         android:scaleType="fitCenter" />
 
+    <!-- Camera Parameters View (Left Side) -->
+    <TextView
+        android:id="@+id/cameraParamsTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="#AA000000"
+        android:textColor="#FFFFFF"
+        android:maxLines="20"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Movement Data View (Right Side) -->
+    <TextView
+        android:id="@+id/movementDataTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="#AA000000"
+        android:textColor="#FFFFFF"
+        android:maxLines="20"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Pixel Matrix View (Bottom) -->
     <TextView
         android:id="@+id/matrixTextView"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="8dp"
         android:textSize="12sp"
@@ -22,6 +53,5 @@
         android:textColor="#FFFFFF"
         android:maxLines="10"
         android:ellipsize="end"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
